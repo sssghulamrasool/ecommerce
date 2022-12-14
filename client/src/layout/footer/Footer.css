@@ -1,0 +1,11 @@
+footer {
+  background: black;
+  padding: 20px 0;
+  padding: 1.25rem;
+}
+footer p {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 400;
+  margin: 0;
+}

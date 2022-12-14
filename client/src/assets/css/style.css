@@ -1,0 +1,38 @@
+.custom-btn {
+  background-color: #e73d8e;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#e73d8e),
+    to(#232490)
+  ) !important;
+  background-image: -webkit-linear-gradient(left, #e73d8e, #232490) !important;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 18px rgb(22 33 113 / 26%);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-transform: capitalize;
+  padding: 0.7rem 3rem;
+  border: none;
+  border-radius: 0;
+}
+
+.title--for--all {
+  color: #180033;
+  font-size: 35px;
+  line-height: 44px;
+  letter-spacing: -0.025em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.Feature,
+.AdminUpdateProfile,
+.UpdateProduct,
+.admin--productlist,
+.AddProduct {
+  padding: 50px;
+}

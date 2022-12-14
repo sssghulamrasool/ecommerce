@@ -1,0 +1,25 @@
+.admin--dashboard .admin--row {
+  display: flex;
+  width: 100%;
+}
+
+.admin--row .column-1 {
+  width: 320px;
+}
+.admin--row .column-2 {
+  width: 100%;
+  max-width: calc(100% - 320px);
+}
+
+.welcome--admin {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+
+  padding: 100px;
+}
+
+h4.welcome--admin span {
+  color: crimson;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+.home--product--section--wrapper button.slick-arrow.slick-prev,
+.home--product--section--wrapper button.slick-arrow.slick-next {
+  background: -webkit-linear-gradient(left, #4ba116, #86f433);
+  height: 30px;
+  width: 35px;
+}
+.home--product--section--wrapper button.slick-arrow.slick-prev {
+  z-index: 1;
+  left: -3px;
+}
+.home--product--section--wrapper button.slick-arrow.slick-next {
+  right: -5px;
+}
+.home--product--section--wrapper button.slick-arrow.slick-prev::before,
+.home--product--section--wrapper button.slick-arrow.slick-next::before {
+  font-family: inherit;
+  line-height: 12px;
+  font-size: 30px;
+}

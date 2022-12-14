@@ -1,0 +1,11 @@
+.admin--footer {
+  padding: 1.25rem;
+  background-color: #f3f3f3;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.admin--footer p {
+  color: black;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}

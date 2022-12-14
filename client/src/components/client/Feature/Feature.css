@@ -1,0 +1,22 @@
+.Feature {
+  background-color: #ebf2ff;
+}
+
+.feature--products button.slick-arrow.slick-prev,
+.feature--products button.slick-arrow.slick-next {
+  background: -webkit-linear-gradient(left, #4ba116, #86f433);
+  height: 30px;
+  width: 35px;
+}
+.feature--products button.slick-arrow.slick-prev {
+  z-index: 1;
+}
+.feature--products button.slick-arrow.slick-prev::before,
+.feature--products button.slick-arrow.slick-next::before {
+  font-family: inherit;
+  line-height: 12px;
+  font-size: 30px;
+}
+.feature--products .slick-slide {
+  padding: 0 10px;
+}

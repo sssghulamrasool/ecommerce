@@ -1,0 +1,33 @@
+.PageTitle {
+  background-image: url("../../../assets/images/titlebar.jpg");
+  padding: 100px 0;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.PageTitle::after {
+  content: "";
+  background: -webkit-linear-gradient(left, #5206a1, #ff0000);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  opacity: 0.85;
+}
+.PageTitle .page--title {
+  font-size: 30px;
+  position: relative;
+  z-index: 5;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.PageTitle .page--title a {
+  text-decoration: none;
+  color: #f24b13;
+}
+.PageTitle .page--title span {
+  font-size: 25px;
+}

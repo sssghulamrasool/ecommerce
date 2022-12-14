@@ -1,0 +1,26 @@
+.PageNotFound {
+  padding: 40px 0;
+  text-align: center;
+}
+.PageNotFound .p--404 {
+  font-size: 140px;
+  color: #f60;
+  font-family: "Poppins", sans-serif;
+}
+
+.go-to--home--page {
+  padding: 1rem 5rem;
+  background-color: #250112;
+  display: inline-block;
+  text-decoration: none;
+  color: #d5d5d5;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  border-radius: 0;
+}
+.go-to--home--page:hover {
+  color: #d5d5d5;
+  background-color: rgb(4, 109, 16);
+}

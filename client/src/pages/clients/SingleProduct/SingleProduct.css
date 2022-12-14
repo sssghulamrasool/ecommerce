@@ -1,0 +1,172 @@
+.SingleProduct {
+  background: #f9f9f9;
+  padding: 100px 0;
+}
+
+.single--product--left--image--box .image-thumnail {
+  text-align: center;
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.single--product--left--image--box .image-thumnail img {
+  height: 100%;
+  max-height: 450px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center 100%;
+}
+
+/* 
+.single--product--left--image--box .image-thumnail {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: max-content;
+  max-height: 450px;
+} */
+.single--product--left--image--box .image--gallary {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.image--gallary .img-gallay--wrap {
+  width: 80px;
+  margin: 20px 15px 20px 0;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 10px;
+  border: 2px solid #e5e5e5;
+  background: white;
+  cursor: pointer;
+}
+.image--gallary .img-gallay--wrap.active {
+  border: 2px solid orangered;
+}
+.image--gallary .img-gallay--wrap:hover {
+  border: 2px solid orangered;
+}
+
+/* ========================== */
+/*  right side */
+/* ========================== */
+.single--product--right .sigle--product--name {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: inherit;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  color: #162171;
+}
+
+.single--product--right .sigle--product--category,
+.single--product--right .sigle--product--stock--quantity,
+.single--product--right .sigle--product--price {
+  color: #1a0233;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  margin: 10px 0;
+}
+
+.single--product--right .sigle--product--price {
+  border-bottom: 2px solid #ededed;
+  padding-bottom: 20px;
+}
+.single--product--right .sigle--product--price span {
+  color: #4ba116;
+}
+.sigle--product--category .Shoes {
+  color: #ff0000;
+}
+.sigle--product--category .Flower {
+  color: #4ba116;
+}
+.sigle--product--category .Book {
+  color: #0042ff;
+}
+
+.single--product--right .sigle--product--short--desc {
+  font-size: 15px;
+  line-height: 26px;
+  font-family: "Poppins";
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ededed;
+}
+
+.add--to--cart--wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.add--to--cart--wrapp .add--to--cart--quantity {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #2834449c;
+  margin-right: 20px;
+}
+.add--to--cart--quantity .increment--quantity,
+.add--to--cart--quantity .decrement--quantity {
+  background: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  color: white;
+}
+.add--to--cart--quantity .increment--quantity:hover,
+.add--to--cart--quantity .decrement--quantity:hover {
+  background-color: #041427;
+}
+.add--to--cart--quantity .number--quantity {
+  width: 60px;
+  padding: 0.4rem;
+  border: none;
+  border-left: 1px solid #041427;
+  border-right: 1px solid #041427;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.add--to--cart--quantity input:focus {
+  outline: none;
+}
+
+.add--to--cart--btn a {
+  padding: 0.55rem 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: roboto;
+  text-align: center;
+  text-transform: capitalize;
+  border: none;
+  width: 100%;
+
+  border-right: 1px solid rgb(213 213 213);
+  transition: all 0.5s;
+
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  transition: all 0.5s;
+  min-width: 180px;
+  background: #232490;
+}
+.add--to--cart--btn a:hover {
+  background: #e73d8e;
+  color: white;
+}
+.single--product--top {
+  padding-bottom: 80px;
+}
+
+.single--product--bottom .single--product--desc {
+  font-size: 15px;
+  line-height: 26px;
+  font-family: "Poppins";
+}

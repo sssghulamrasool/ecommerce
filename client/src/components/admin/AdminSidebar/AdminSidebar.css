@@ -1,0 +1,61 @@
+section.AdminSidebar {
+  height: 100%;
+  background: white;
+  min-height: 100vh;
+  height: 100%;
+  /* padding: 40px; */
+  position: fixed;
+  inset: 0;
+  max-width: 320px;
+  border-right: 1px solid rgb(100 100 111 / 20%);
+}
+
+.admin--sidebar--menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin--sidebar--menu ul li {
+  border-bottom: 1px solid rgb(100 100 111 / 20%);
+  transition: all 200ms linear 0ms;
+}
+.admin--sidebar--menu ul li a {
+  padding: 14px 30px;
+  display: block;
+  text-decoration: none;
+  color: #162171;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+.admin--sidebar--menu li a.active {
+  color: #f60;
+}
+
+.admin--sidebar--menu li a:hover {
+  color: #f60;
+}
+.admin--sidebar--menu li a .menu--right--side--arrow {
+  padding-right: 8px;
+  display: none;
+}
+.admin--sidebar--menu li a.active .menu--right--side--arrow,
+.admin--sidebar--menu li a:hover .menu--right--side--arrow {
+  display: inline-block;
+}
+.admin--sidebar--logo {
+  padding: 20px 30px;
+  border-bottom: 1px solid rgb(100 100 111 / 20%);
+}
+.admin--sidebar--logo img {
+  max-height: 35px;
+}
+.admin--details i {
+  font-size: 22px;
+  cursor: pointer;
+}
+.AdminSidebar .admin--sidebar--menu {
+}

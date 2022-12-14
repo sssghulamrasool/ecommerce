@@ -1,0 +1,56 @@
+.register--form label {
+  color: #162171;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: normal;
+}
+.register {
+  padding: 100px 0;
+}
+
+.register--form .form-control {
+  border-radius: 0;
+}
+.register--form .form-control:focus {
+  box-shadow: none;
+  border-color: black;
+}
+.register--form .form-control::placeholder {
+  text-transform: capitalize;
+}
+
+form.register--form {
+  max-width: 65%;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 60px;
+}
+
+.passwordicon {
+  position: absolute;
+  top: 40px;
+  right: 17px;
+  cursor: pointer;
+}
+
+.errmessage {
+  color: red;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.create--account {
+  margin-top: 20px;
+}
+.create--account a {
+  text-transform: capitalize;
+  color: #e73d8e;
+  text-decoration: none;
+}
+
+.create--account a:hover {
+  color: #e73d8e;
+}

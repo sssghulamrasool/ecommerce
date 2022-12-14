@@ -1,0 +1,118 @@
+.feature--product--item {
+  background-color: white;
+  border-bottom: 8px solid white;
+}
+.feature--product--item:hover {
+  border-bottom: 8px solid #612be1;
+}
+.feature--product--item .feature--product--image {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.feature--product--image .new--product {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: -webkit-linear-gradient(left, #dd9933, #ff0000);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  color: white;
+}
+
+.feature--product--image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.feature--product--item .feature--product--detail {
+  padding: 1.5rem;
+}
+.feature--product--detail h4 {
+  font-size: 20px;
+  height: 50px;
+  overflow: hidden;
+  font-family: roboto;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #1a0233;
+  cursor: pointer;
+}
+
+.feature--product--detail h4:hover {
+  color: orange;
+  transition: all 0.5s;
+}
+
+.feature--product--extra {
+  background-color: #db0000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature--product--extra .add--to--cart--link {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: roboto;
+  text-align: center;
+  text-transform: capitalize;
+  border: none;
+  width: 70%;
+  background-color: transparent;
+  border-right: 1px solid rgb(213 213 213);
+  transition: all 0.5s;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  transition: all 0.5s;
+}
+
+.feature--product--extra .add--to--cart--link .add--to--cart--icon {
+  margin-right: 10px;
+}
+.feature--product--extra span.view--product--details {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  color: white;
+}
+.feature--product--extra span.view--product--details:hover,
+.feature--product--extra .add--to--cart--link:hover {
+  background-color: #1a0233;
+  color: white;
+}
+
+.feature--product--detail .price {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #1a0233;
+  margin-bottom: 25px;
+}
+
+.feature--product--detail p.price span {
+  color: #f60;
+}
+
+.feature--product--detail .category {
+  color: #1a0233;
+  font-size: 20px;
+  font-weight: 700;
+}
+.category .Shoes {
+  color: #ff0000;
+}
+
+.category .Flower {
+  color: #4ba116;
+}
+.category .Book {
+  color: #0042ff;
+}

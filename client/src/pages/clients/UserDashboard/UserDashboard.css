@@ -1,0 +1,128 @@
+.UserDashboard {
+  padding: 100px 0;
+}
+.UserDashboard .user--dashboard--title {
+  font-size: 40px;
+  font-family: "Roboto";
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.UserDashboard .nav-pills .nav-link {
+  font-size: 17px;
+  background: #efefef;
+  margin: 5px 0;
+  border-radius: 0;
+  text-align: start;
+  width: 100%;
+  font-family: roboto;
+  border: 2px solid #1d2f3c42;
+  color: #1d2f3c;
+}
+
+div#v-pills-tabContent {
+  padding: 1.5rem;
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.UserDashboard .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #1d2f3c !important;
+  color: white;
+}
+
+.UserDashboard .my--account--order--table th,
+.UserDashboard .my--account--order--table td {
+  width: 22%;
+}
+.UserDashboard .my--account--order--table th:nth-child(5),
+.UserDashboard .my--account--order--table td:nth-child(5) {
+  width: 10%;
+}
+.UserDashboard .my--account--order--table td {
+  line-height: 25px;
+}
+.UserDashboard .my--account--order--table td:nth-child(5) {
+  line-height: normal;
+}
+
+.UserDashboard button.my-account--view--btn {
+  background: #1f033c;
+  width: 100%;
+  border: none;
+  padding: 0.4rem;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: inherit;
+  color: white;
+}
+.UserDashboard button.my-account--view--btn:hover {
+  background-color: #fc1005;
+}
+
+.UserDashboard thead tr {
+  color: #1f033c;
+}
+.UserDashboard .row--divv {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  padding: 0.6rem 1rem;
+}
+
+.UserDashboard .row--divv p,
+.UserDashboard .row--divv h4 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.row--divv h4 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #1f033c;
+  min-width: 120px;
+}
+
+.UserDashboard .row--divv:last-child {
+  flex-direction: column;
+  align-items: self-start;
+}
+
+.UserDashboard .row--divv:last-child h4 {
+  margin-bottom: 20px !important;
+}
+.UserDashboard .row--divv:last-child p {
+  min-height: 40px;
+  max-height: 100px;
+}
+
+.header--product--details,
+.produc--details .prod--row {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  padding: 0.6rem 1rem;
+}
+
+.account--detailss h4,
+.header--product--details .product--name,
+.produc--details .prod--row .product--name {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #1f033c;
+  min-width: 120px;
+}
+
+.UserDashboard .order--billing--title {
+  padding: 10px 0;
+  color: #f38c3f;
+  text-transform: capitalize;
+  font-weight: 600;
+}

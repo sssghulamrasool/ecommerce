@@ -1,0 +1,72 @@
+section.AdminHeader {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid rgb(100 100 111 / 20%);
+  background-color: white;
+  line-height: 45px;
+}
+
+.admin--details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+}
+span.menu--profile--img {
+  display: block;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.admin--profile--detilass--set {
+  width: 180px;
+}
+.admin--profile--detilass--set ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  background-color: white;
+}
+.admin--profile--detilass--set h4 {
+  color: #162171;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.admin--profile--detilass--set li a {
+  display: block;
+  text-decoration: none;
+  color: #162171;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.admin--profile--detilass--set {
+  position: absolute;
+  top: 60px;
+  right: 85px;
+}
+.admin--profile--detilass--set ul li {
+  border-bottom: 1px solid rgb(100 100 111 / 20%);
+}
+
+.admin--details .profile--admin {
+  display: flex;
+  align-items: center;
+}
+.profile--admin h5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-right: 10px;
+}

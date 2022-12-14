@@ -1,0 +1,27 @@
+.AddProduct label {
+  color: #162171;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.AddProduct .form-control {
+  border-radius: 0;
+}
+.AddProduct .form-control:focus {
+  box-shadow: none;
+  border-color: black;
+}
+.AddProduct .form-control::placeholder {
+  text-transform: capitalize;
+}
+
+textarea.form-control {
+  resize: none;
+  height: 100px;
+}
+
+#description {
+  height: 150px;
+}

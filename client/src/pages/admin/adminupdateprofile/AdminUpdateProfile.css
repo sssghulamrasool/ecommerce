@@ -1,0 +1,50 @@
+.edit-col {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #f3f3f385;
+  font-family: "Poppins", sans-serif;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.edit-col .eidt-col-img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.eidt-col-img img {
+  overflow: hidden;
+}
+.eidt-col-detail h5 {
+  color: #162171;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.eidt-col-detail p {
+  color: #76839a !important;
+}
+
+.eidt-col-detail .emailsend {
+  background-color: #f60;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+}
+.eidt-col-detail .emailsend span {
+  margin-right: 10px;
+}
+
+.admin--edit--detail .card {
+  border: none;
+  background: #f3f3f385;
+  border-radius: 0;
+  margin-top: 50px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: -1;
+}

@@ -1,0 +1,33 @@
+.HeroSlider {
+  background: url("../../../assets/images/slider-2.jpg");
+  background-size: cover;
+  background-position: center 75%;
+  position: relative;
+  padding: 200px 0;
+}
+
+.HeroSlider::after {
+  content: " ";
+  background: #000000d6;
+
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.HeroSlider .container-xxl {
+  z-index: 2;
+  position: relative;
+}
+.HeroSlider .some--tiltle {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: poppins;
+  margin-bottom: 40px;
+}
+.HeroSlider .custom-btn {
+  background: #f60 !important;
+}

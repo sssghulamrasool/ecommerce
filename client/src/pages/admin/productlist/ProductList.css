@@ -1,0 +1,79 @@
+.product--list--table tfoot th,
+.product--list--table thead th {
+  text-align: center;
+  text-transform: capitalize;
+}
+.product--list--table thead th:nth-child(1),
+.product--list--table tbody td:nth-child(1),
+.product--list--table tfoot th:nth-child(1) {
+  text-align: center;
+}
+.product--list--table thead th:nth-child(1),
+.product--list--table thead th:nth-child(3),
+.product--list--table thead th:nth-child(4),
+.product--list--table tbody td:nth-child(1),
+.product--list--table tbody td:nth-child(3),
+.product--list--table
+  tbody
+  td:nth-child(4)
+  .product--list--table
+  tfoot
+  th:nth-child(1),
+.product--list--table tfoot th:nth-child(3),
+.product--list--table tfoot th:nth-child(4) {
+  width: 10%;
+}
+.product--list--table tbody td:nth-child(5),
+.product--list--table thead th:nth-child(5),
+.product--list--table tfoot th:nth-child(5) {
+  width: 20%;
+  text-align: center;
+}
+.product--list--table tbody td:nth-child(6),
+.product--list--table thead th:nth-child(6),
+.product--list--table tfoot th:nth-child(6) {
+  width: 15%;
+}
+.product--list--table tbody td:nth-child(2),
+.product--list--table tfoot th:nth-child(2),
+.product--list--table thead th:nth-child(2) {
+  width: 20%;
+}
+
+.product--list--table tbody td:nth-child(7),
+.product--list--table tfoot th:nth-child(7),
+.product--list--table thead th:nth-child(7) {
+  width: 15%;
+  text-align: center;
+}
+
+.product--list--table tfoot,
+.product--list--table thead {
+  background-color: #dbdbdb;
+}
+
+button.ctm--btn {
+  background: #8fc7ff;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  line-height: normal;
+}
+
+button.ctm--btn:first-child {
+  margin-right: 15px;
+}
+
+.productlist--delete--btn {
+  background: brown !important;
+  color: white;
+}
+
+.product--list--table tbody tr {
+  line-height: 60px;
+}
+.product--list--table tbody td:first-child img {
+  max-height: 60px;
+}
+.product--list--table tbody td:nth-child(7) {
+  line-height: auto;
+}
