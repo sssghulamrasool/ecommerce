@@ -6,3 +6,6 @@ export { default as UserLogin } from "./UserLogin/UserLogin";
 export { default as UserCreateAccount } from "./UserCreateAccount/UserCreateAccount";
 export { default as FindUserPassword } from "./FindUserPassword/FindUserPassword";
 export { default as UserDashboard } from "./UserDashboard/UserDashboard";
+export { default as Checkout } from "./Checkout/Checkout";
+export { default as OrderDetail } from "./Orderdetail/OrderDetail";
+export { default as ContactUs } from "./contact/ContactUs";

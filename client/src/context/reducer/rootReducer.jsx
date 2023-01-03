@@ -1,4 +1,3 @@
-import { GETFORMSESSIONSTORANGE } from "../../utlis/GetLocalCart";
 const initialState = {
   totalQuantity: 0,
   loadingProduct: false,
@@ -6,8 +5,12 @@ const initialState = {
   allProduct: [],
   featureProducts: [],
   cartItemLocaltoRedux: [],
-  admin: [],
+  admin: null,
   loadinAdminPanel: false,
+  clientCreditional: null,
+  checkout: [],
+  orders: [],
+  customers: [],
 };
 export const Reduder = (state = initialState, action) => {
   switch (action.type) {
@@ -37,6 +40,29 @@ export const Reduder = (state = initialState, action) => {
         ...state,
         loadinAdminPanel: true,
         admin: action.payload,
+      };
+
+    case "CLIENT":
+      return {
+        ...state,
+        loadingProduct: true,
+        clientCreditional: action.payload,
+      };
+    case "CHECKOUT":
+      return {
+        ...state,
+        checkout: action.payload,
+      };
+
+    case "ORDERS":
+      return {
+        ...state,
+        orders: action.payload,
+      };
+    case "CUSTOMERS":
+      return {
+        ...state,
+        customers: action.payload,
       };
     default:
       return state;

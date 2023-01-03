@@ -33,11 +33,7 @@ const Login = () => {
       })
       .then((data) => {
         if (data.message === 1) {
-          console.log(data.data);
-          sessionStorage.setItem(
-            "adminId",
-            JSON.stringify({ adminid: data.data._id })
-          );
+          sessionStorage.setItem("adminId", JSON.stringify(data.data._id));
           dispatch({
             type: "ADMIN",
             payload: data.data,
@@ -54,6 +50,7 @@ const Login = () => {
       seteErrorMessageTrue(false);
     }, 1000);
   };
+
   return (
     <section className="login">
       <div className="container-fluid">

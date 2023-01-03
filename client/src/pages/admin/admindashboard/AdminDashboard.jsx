@@ -5,23 +5,31 @@ import AdminFooter from "../../../components/admin/AdminFooter/AdminFooter";
 import Routing from "../../../routes/Routing";
 import "./AdminDashboard.css";
 import { useSelector } from "react-redux";
+import { Login } from "../adminPage";
 const AdminDashboard = () => {
-  const state = useSelector((state) => state.Reduder);
+  const { admin } = useSelector((state) => state.Reduder);
+
   return (
-    <section className="admin--dashboard">
-      <div className="admin--row">
-        <div className="column-1">
-          <AdminSidebar />
-        </div>
-        <div className="column-2">
-          <div className="admin--dashboard">
-            <AdminHeader admin={state.admin} />
-            <Routing />
-            <AdminFooter />
+    <>
+      {admin === null ? (
+        <Login />
+      ) : (
+        <section className="admin--dashboard">
+          <div className="admin--row">
+            <div className="column-1">
+              <AdminSidebar />
+            </div>
+            <div className="column-2">
+              <div className="admin--dashboard">
+                <AdminHeader />
+                <Routing />
+                <AdminFooter />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+      )}
+    </>
   );
 };
 

@@ -1,0 +1,80 @@
+.OrderDetail {
+  padding: 80px 0;
+}
+ul.order-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  padding: 2rem;
+  margin: 50px 0;
+  background: white;
+  border-radius: 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.OrderDetail .table > :not(caption) > * > * {
+  padding: 0.7rem 14px;
+}
+.OrderDetail table {
+  border: 1px solid #0000002e !important;
+}
+.OrderDetail .detaill--- {
+  /* padding: 2em; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.detaill--- .billing--addres {
+  padding: 2em;
+}
+
+.detaill--- .billing--addres.first {
+  padding-right: 1em;
+}
+.detaill--- .billing--addres.second {
+  padding-left: 1em;
+}
+ul.order-detail li {
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+ul.order-detail li strong {
+  text-transform: lowercase;
+}
+
+ul.order-detail li:last-child {
+  border-right: none;
+}
+ul.order-detail li strong {
+  display: block;
+  padding-top: 20px;
+}
+
+.thanksorder {
+  font-size: 40px;
+  line-height: 70px;
+  padding: 0px 35px;
+  font-family: inherit;
+
+  border: 2px solid orangered;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  background-color: #ff0000b0;
+  color: white;
+}
+
+.billing--addres.second td:first-child,
+.billing--addres.second th:first-child {
+  max-width: 70%;
+  width: 100%;
+  border-right: 1px solid #0000002e;
+}
+.billing--addres.second th:nth-child(2),
+.billing--addres.second td:nth-child(2) {
+  max-width: 40%;
+  width: 100%;
+  padding-left: 25px;
+}

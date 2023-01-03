@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { CLIENTLOGINDATA } from "../../../utlis/ClientLogin";
 
 import "./UserLogin.css";
+import { useEffect } from "react";
 const UserLogin = () => {
+  const dispatch = useDispatch();
   const [hideShow, setHideShow] = useState(false);
   const [userCredential, setCredential] = useState({
     userEmail: "",
@@ -35,9 +39,13 @@ const UserLogin = () => {
             progress: undefined,
             theme: "colored",
           });
-          // setTimeout(() => {
-          //   navigate("/");
-          // }, 1500);
+
+          dispatch({
+            type: "CLIENT",
+            payload: data.user,
+          });
+          sessionStorage.setItem("client", JSON.stringify(data.user._id));
+          navigate("/cart");
         } else {
           toast.error(data.message, {
             position: "top-right",
@@ -52,6 +60,7 @@ const UserLogin = () => {
         }
       });
   };
+
   return (
     <section className="UserLogin">
       <div className="container-xxl">

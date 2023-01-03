@@ -70,3 +70,27 @@ span.menu--profile--img {
   padding-bottom: 0;
   margin-right: 10px;
 }
+
+.admin--logins ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin--logins ul li {
+  line-height: normal;
+  margin-left: 20px;
+}
+.admin--logins ul li a {
+  display: block;
+  text-decoration: none;
+  color: #162171;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.admin--logins ul li a.active {
+  color: orangered;
+}

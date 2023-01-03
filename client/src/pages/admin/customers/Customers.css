@@ -1,0 +1,20 @@
+.Customers {
+  padding: 50px;
+}
+
+.customer--table table th,
+.customer--table table td {
+  width: 15%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.customer--table tfoot tr,
+.customer--table thead tr {
+  background-color: #4a0c4a;
+  color: rgb(243, 241, 238);
+  text-transform: capitalize;
+  text-align: center;
+}
+.customer--table .table > :not(caption) > * > * {
+  padding: 1rem 0.5rem;
+}

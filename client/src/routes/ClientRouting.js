@@ -9,6 +9,9 @@ import {
   UserLogin,
   FindUserPassword,
   UserDashboard,
+  Checkout,
+  OrderDetail,
+  ContactUs,
 } from "../pages/clients/pages";
 import PageNotFound from "../pages/admin/pagenotfound/PageNotFound";
 import Header from "../layout/header/Header";
@@ -20,7 +23,7 @@ const ClientRouting = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<h1> About US</h1>} />
-        <Route path="contact" element={<h1> contact us</h1>} />
+        <Route path="contact" element={<ContactUs />} />
         <Route path="blog" element={<h1> blog </h1>} />
         <Route path="products" element={<h1> All product listing</h1>} />
         <Route path="*" element={<PageNotFound />} />
@@ -31,6 +34,8 @@ const ClientRouting = () => {
         <Route path="login" element={<UserLogin />} />
         <Route path="create-account" element={<UserCreateAccount />} />
         <Route path="forget-password" element={<FindUserPassword />} />
+        <Route path="checkout" element={<Checkout />} />
+        <Route path="/checkout/:id" element={<OrderDetail />} />
       </Routes>
       <Footer />
     </>

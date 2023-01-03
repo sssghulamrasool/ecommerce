@@ -6,3 +6,6 @@ export { default as UpdateProduct } from "./updateproduct/UpdateProduct";
 export { default as Register } from "./singup/Register";
 export { default as AdminUpdateProfile } from "./adminupdateprofile/AdminUpdateProfile";
 export { default as PageNotFound } from "./pagenotfound/PageNotFound";
+export { default as Orders } from "./orders/Orders";
+export { default as OrderUpdate } from "./orderupdate/OrderUpdate";
+export { default as Customers } from "./customers/Customers";

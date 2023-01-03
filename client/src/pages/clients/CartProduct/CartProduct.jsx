@@ -1,10 +1,15 @@
 import "./CartProduct.css";
 import { useSelector, useDispatch } from "react-redux";
 import { GETFORMSESSIONSTORANGE } from "../../../utlis/GetLocalCart";
+import Swal from "sweetalert2";
 
 import { useEffect, useState } from "react";
 import RowCart from "./RowCart";
+import { useNavigate } from "react-router-dom";
+import { CLIENTLOGINDATA } from "../../../utlis/ClientLogin";
 const CartProduct = () => {
+  const navigate = useNavigate();
+  const [clientCreditional, setClinetCreditional] = useState(null);
   const dipatch = useDispatch();
   const { allProduct, cartItemLocaltoRedux } = useSelector(
     (state) => state.Reduder
@@ -90,13 +95,35 @@ const CartProduct = () => {
     0
   );
 
-  const proceedToCheckout = () => {};
+  const proceedToCheckout = () => {
+    if (clientCreditional === null) {
+      Swal.fire({
+        title: "Please login",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: false,
+        showConfirmButton: true,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/login");
+        }
+      });
+    }
+    // console.log("ok");
+    if (clientCreditional !== null) {
+      navigate("/checkout");
+    }
+  };
+
   useEffect(() => {
     dipatch({
       type: "CARTITEMFORMLOCAL",
       payload: cartItems,
     });
     localStorage.setItem("cartProduct", JSON.stringify(localCart));
+
+    setClinetCreditional(CLIENTLOGINDATA());
+    // clientCreditional
   }, [localCart]);
 
   return (
@@ -160,7 +187,6 @@ const CartProduct = () => {
               </div>
             </div>
             <button className="checkout-btn" onClick={proceedToCheckout}>
-              {" "}
               proceed to checkout
             </button>
           </div>

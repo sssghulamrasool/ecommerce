@@ -1,12 +1,13 @@
-import Moment from "moment";
-import React, { useEffect } from "react";
+// import Moment from "moment";
+
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-import profile from "../../../assets/images/profile ung.webp";
+
 import "./AdminUpdateProfile.css";
 const AdminUpdateProfile = () => {
-  const { id } = useParams();
   const { admin } = useSelector((state) => state.Reduder);
+  const year = new Date(admin[0].memberSince).getFullYear();
+  const date = new Date(admin[0].memberSince).getDate();
+  const month = new Date(admin[0].memberSince).getMonth() + 1;
 
   return (
     <section className="AdminUpdateProfile">
@@ -16,14 +17,11 @@ const AdminUpdateProfile = () => {
             <div className="eidt-profile">
               <div className="edit-col">
                 <div className="eidt-col-img">
-                  <img src={admin.picture} alt="" className="img-fluid" />
+                  <img src={admin[0].picture} alt="" className="img-fluid" />
                 </div>
                 <div className="eidt-col-detail">
-                  <h5>Elizabeth Dyer</h5>
-                  <p>
-                    Member Since :{" "}
-                    {Moment(admin.memberSince).format("DD-MM-YYYY")}
-                  </p>
+                  <h5>{admin[0].name}</h5>
+                  <p>Member Since : {`${date} / ${month} / ${year}`}</p>
                   <button className="emailsend">
                     <span>
                       <i className="fa fa-envelope"></i>
@@ -50,12 +48,12 @@ const AdminUpdateProfile = () => {
                       <tbody className="col-lg-12 col-xl-6 p-0">
                         <tr>
                           <td>
-                            <strong>Full Name :</strong> {admin.name}
+                            <strong>Full Name :</strong> {admin[0].name}
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <strong>Location :</strong> {admin.address}
+                            <strong>Location :</strong> {admin[0].address}
                           </td>
                         </tr>
                         <tr>
@@ -74,12 +72,12 @@ const AdminUpdateProfile = () => {
                         <tr>
                           <td>
                             <strong>Email :</strong>
-                            {admin.email}
+                            {admin[0].email}
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <strong>Phone :</strong> {admin.phone}
+                            <strong>Phone :</strong> {admin[0].phone}
                           </td>
                         </tr>
                       </tbody>

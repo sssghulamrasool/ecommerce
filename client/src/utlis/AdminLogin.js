@@ -3,6 +3,6 @@ export const ADMINLOGINDATA = () => {
   if (items) {
     return JSON.parse(sessionStorage.getItem("adminId"));
   } else {
-    return [];
+    return null;
   }
 };

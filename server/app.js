@@ -5,6 +5,7 @@ const app = express();
 const productRoute = require("./routes/productRoutes");
 const adminRoute = require("./routes/adminLogin");
 const userRoures = require("./routes/usersRoutes");
+const orderRoutes = require("./routes/orderRoutes");
 require("./config/config");
 app.use(cors());
 app.use(express.json());
@@ -14,6 +15,7 @@ app.use("/", productRoute);
 //  admin route
 app.use("/admin", adminRoute);
 app.use("/user", userRoures);
+app.use("/order", orderRoutes);
 
 app.listen(9090, () => {
   console.log("server is running on this port");

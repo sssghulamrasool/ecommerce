@@ -1,0 +1,66 @@
+.Orders {
+  padding: 50px;
+}
+
+.Orders .table > :not(caption) > * > * {
+  padding: 1rem 0.5rem;
+}
+.Orders table thead,
+.Orders table tfoot {
+  background-color: #4a0c4a;
+  color: rgb(243, 241, 238);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.Orders thead th:nth-child(1),
+.Orders thead th:nth-child(2),
+.Orders thead th:nth-child(3),
+.Orders thead th:nth-child(4),
+.Orders thead th:nth-child(5),
+.Orders tbody td:nth-child(1),
+.Orders tbody td:nth-child(2),
+.Orders tbody td:nth-child(3),
+.Orders tbody td:nth-child(4),
+.Orders tbody td:nth-child(5) {
+  width: 20%;
+  text-align: center;
+}
+.Orders .admin--order-set {
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-left: 12px;
+  background: #4a0c4a;
+  color: white;
+  border-radius: 0.1rem;
+}
+
+.Orders table .ord--icon {
+  margin-right: 10px;
+}
+.staus {
+  padding: 0.5rem;
+  display: inline-block;
+  background: lightgray;
+  min-width: 120px;
+  width: 100%;
+  max-width: 140px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-weight: 500;
+  color: white;
+}
+.staus.cancelled {
+  background-color: #ffda00;
+  color: black;
+}
+.staus.processing {
+  background-color: brown;
+}
+.staus.completed {
+  background-color: green;
+}
+.staus.pending {
+  background-color: teal;
+}

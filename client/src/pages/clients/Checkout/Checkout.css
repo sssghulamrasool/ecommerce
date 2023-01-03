@@ -1,0 +1,37 @@
+section.Checkout {
+  margin: 50px 0;
+}
+.your--order--details .custom-btn {
+  width: 100%;
+}
+.your--order--details .about--order {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 1rem;
+  border: 1px solid #0000001f;
+}
+.about--order h5 {
+  margin-bottom: 0;
+}
+
+.selectpaymentmethod {
+  margin-bottom: 15px;
+}
+.selectpaymentmethod input {
+  margin-right: 10px;
+  margin-left: 4px;
+}
+
+.your--order--details h5.product--name {
+  display: flex;
+  align-items: center;
+}
+.your--order--details h5.product--name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+  display: inline-block;
+  line-height: 20px;
+  height: 23px;
+}

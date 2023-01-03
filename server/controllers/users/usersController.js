@@ -1,4 +1,5 @@
 const UserModel = require("../../model/users/userModel");
+const OrdrModel = require("../../model/order/orderModel");
 exports.userCreateAccount = async (req, res) => {
   try {
     const findExistedEmail = await UserModel.findOne({
@@ -17,6 +18,7 @@ exports.userCreateAccount = async (req, res) => {
         phone: req.body.uphone,
         address: req.body.uaddress,
       });
+
       res.send({
         mess: 1,
         message: "Success",
@@ -26,19 +28,31 @@ exports.userCreateAccount = async (req, res) => {
   } catch (error) {
     res.send({
       mess: 0,
-
       message: error.errors,
     });
   }
 };
 exports.userAccount = async (req, res) => {
   try {
-    const userData = await UserModel.find();
+    let customers = await UserModel.find();
+    const orders = await OrdrModel.find();
+    for (let i = 0; i < customers.length; i++) {
+      let data = orders.filter(
+        (els) => els.customer_id === customers[i]._id.toString()
+      );
+      await UserModel.findByIdAndUpdate(
+        customers[i]._id.toString(),
+        { orders: data.length },
+        { new: true }
+      );
+    }
+
+    let newcustomers = await UserModel.find();
     res.send({
       mess: 1,
       message: "success",
-      totalUser: userData.length,
-      users: userData,
+      length: newcustomers.length,
+      customers: newcustomers,
     });
   } catch (error) {
     res.send({
@@ -58,6 +72,7 @@ exports.userLogin = async (req, res) => {
         res.send({
           mess: 1,
           message: "successfully login",
+          user: findUder,
         });
       } else {
         res.send({

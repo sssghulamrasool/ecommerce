@@ -1,20 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./AdminHeader.css";
-import profileAdmin from "../../../assets/images/profile ung.webp";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { useEffect } from "react";
+
 const AdminHeader = ({ admin }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [profileDetailshow, setProfileShow] = useState(false);
-  const sidebarToggle = () => {
+
+  const logoutBtn = () => {
+    sessionStorage.clear();
+    navigate("/admin/login");
     dispatch({
-      type: "MENUSIDETOGGLE",
+      type: "ADMIN",
+      payload: {},
     });
+    setProfileShow(false);
   };
 
-  console.log("aahmin header", admin);
+  // const name = admin?.name;
+  // const firstname = name?.split(" ").slice(0, 1).join("");
+  // const lastname = name?.split(" ").slice(1, 2).join("").charAt(0);
   return (
     <section className="AdminHeader">
       <div className="container-fluid">
@@ -24,22 +31,39 @@ const AdminHeader = ({ admin }) => {
               <div className="role--admin">
                 <span
                   className="menu--colose--from--admin"
-                  onClick={sidebarToggle}
+                  // onClick={sidebarToggle}
                 >
                   <i className="fa-solid fa-list"></i>
                 </span>
               </div>
-              <div className="profile--admin">
-                <h5>Admin</h5>
-                <span
-                  className="menu--profile--img"
-                  onClick={() => {
-                    setProfileShow(!profileDetailshow);
-                  }}
-                >
-                  <img src={profileAdmin} alt="" className="img-fluid" />
-                </span>
-              </div>
+              {admin >= 1 ? (
+                <div className="profile--admin">
+                  {/* <h5>{firstname + " " + lastname + "."}</h5> */}
+                  <span
+                    className="menu--profile--img"
+                    onClick={() => {
+                      setProfileShow(!profileDetailshow);
+                    }}
+                  >
+                    <img
+                      src={admin?.picture}
+                      alt={admin?.name}
+                      className="img-fluid"
+                    />
+                  </span>
+                </div>
+              ) : (
+                <div className="admin--logins">
+                  <ul>
+                    <li>
+                      <NavLink to={`/admin/login`}>login</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to={`/admin/create-account`}>register</NavLink>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -50,18 +74,22 @@ const AdminHeader = ({ admin }) => {
             <li>
               <Link to={`/admin/admin-profile`}>profile</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={`/admin/login`}>login</Link>
             </li>
             <li>
               <Link to={`/admin/create-account`}>register</Link>
-            </li>
+            </li> */}
             <li>
-              <Link to={`/admin/`}>logout</Link>
+              <Link onClick={logoutBtn} to="/admin/login">
+                logout
+              </Link>
             </li>
           </ul>
         </div>
-      ) : null}
+      ) : (
+        <></>
+      )}
     </section>
   );
 };

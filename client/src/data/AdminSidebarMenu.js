@@ -16,7 +16,7 @@ export const AdminSidebarMenu = [
   },
   {
     id: 4,
-    name: "Users",
-    link: "users",
+    name: "customer",
+    link: "customer",
   },
 ];
